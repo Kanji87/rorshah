@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+
+        <title>Уорхол или Роршах?</title>
+
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="http://polymus.ru/games/rorshah/">
+        <meta property="og:title" content="Роршах или Уорхол?">
+        <!-- <meta property="og:description" content="Роршах или Уорхол?"> -->
+        <meta property="og:description" content="Звезда поп-арта Энди Уорхол создал целую серию работ, которые не так просто отличить от творений Роршаха. Получится ли это у вас?">
+        <meta property="og:image" content="http://polymus.ru/games/rorshah/img/ror1.jpg">
+
+        <link href="css/reset.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/master.css" media="screen" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="css/social-likes_flat.css">
+
+        <script src="js/jquery.js"></script>
+        <script src="js/slickQuiz-config.js"></script>
+        <script src="js/slickQuiz.js"></script>
+        <script src="js/master.js"></script>
+
+        <script src="js/social-likes.min.js"></script>
+    </head>
+
+    <body id="slickQuiz">
+        <a href="http://polymus.ru" class="logo"></a>
+        <h1 class="quizName"><!-- where the quiz name goes --></h1>
+
+        <div class="quizArea">
+            <div class="quizHeader">
+                <!-- where the quiz main copy goes -->
+
+                <div class="button-wrapper">
+                    <a class="button startQuiz" href="#">Начать</a>
+                </div>
+            </div>
+
+            <!-- where the quiz gets built -->
+        </div>
+
+        <div class="quizResults">
+            <h3 class="quizScore">Уорхол или Роршах?<br>Я узнал <span><!-- where the quiz score goes --></span></h3>
+
+            <!-- <h3 class="rank"><strong>Ranking:</strong> <span> --><!-- where the quiz ranking level goes --><!-- </span></h3> -->
+
+            <div class="quizResultsCopy">
+                <!-- where the quiz result copy goes -->
+            </div>
+            <a class="try-again-button" href="#">Попробовать еще раз</a>
+            <div class="social-likes" data-media="http://polymus.ru/games/rorshah/img/ror1.jpg" data-title="Роршах или Уорхол?">
+                Поделиться с друзьями:
+                <div class="facebook" data-media="http://polymus.ru/games/rorshah/img/ror1.jpg" title="Поделиться ссылкой на Фейсбуке" >Facebook</div>
+                <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                <div class="vkontakte" data-media="http://polymus.ru/games/rorshah/img/ror1.jpg" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+            </div>
+        </div>
+        <script>
+            $(function(){
+                $('.startQuiz').click(function(){
+                    $('.quizName, .quizHeader').fadeOut('fast');
+                });
+                $('.social-likes').socialLikes();
+
+                $('.try-again-button').click(function() {
+                    location.reload();
+                });
+            });
+        </script>
+    </body>
+</html>
